@@ -119,3 +119,8 @@ class EmployeeViewClass(APIView):
 class EmployeeViewSet(viewsets.ModelViewSet):
     queryset = Employee.objects.all()  # Define the queryset for the viewset
     serializer_class = EmployeeSerializer  # Specify the serializer to be used
+
+
+
+def test():
+    print('Hello from test function')
