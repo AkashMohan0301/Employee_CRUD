@@ -103,7 +103,6 @@ class EmployeeViewClass(APIView):
         else:
             return Response(serializer.errors)
 
-
     def delete(self,request):
         employee_id = request.data['id']
         if Employee.objects.filter(pk = employee_id).exists():
